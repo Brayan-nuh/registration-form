@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="insert.php" method="POST"> 
+        <table class="form">
+            <h2>REGISTER HERE:</h2>
+            <tr>
+                <td>Name:</td>
+                <td> 
+                    <input type="text" placeholder="Name" name="userName"required>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password"placeholder="Password" name="passWord" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio"name="gender"value="m"required>Male
+                    <input type="radio"name="gender" value="f"required>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"name="email"placeholder="Email"required></td>
+            </tr>
+            <tr>
+                <td>Phone no:</td>
+                <td class="phone_container">
+                    <select name="phonecode" required>
+                        <option selected hidden value="">select code</option>
+                        <option >+254</option>
+                        <option >+47</option>
+                        <option >+197</option>
+                        <option >+177</option>
+                        <option >+167</option>
+                    </select>
+                    <input type="number"placeholder="7247****"name="phone"required>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
